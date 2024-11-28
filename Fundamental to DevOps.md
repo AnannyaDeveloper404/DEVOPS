@@ -35,11 +35,24 @@ Roles:
 `planning+Requirement`->`Defining`->`Designing`->`Building`->`Testing`->`Deploy`->`planning`
 
 - Requirement Gathering :This step is conducted by business analyst ,Strategy team or through a survey to collect feedbacks from customers.
-- Defining : Documents (SRS)
+- Defining : Documents (SRS)Software Requirements Specification
 - Designing - HLD nd LLD
   - HLD - Scalable when required,n no. of replica
   - LLD- Coding Type,technology
-- Automation:
+- Automation:These following three are main part of Devops
   - Building
+    - Developing=>writing code and pushing to common repository
   - Testing
-  - Deploy
+    - Testing phase (Run on server),Tested by QE(Quality Assurance engineer)
+  - Deployment :Promote this to production server
+
+## Virtual Machine (VM)
+
+- What is Server?
+- Physical vs Virtual
+- Hypervisor-creates virtual machine
+- How to create vm?
+
+### RealWorld example
+
+- If You request for a vm in AWS of Mumbai branch ,One of the Physical Server's Hypervisor will create a vm for you and will also share you information related to the vm.
