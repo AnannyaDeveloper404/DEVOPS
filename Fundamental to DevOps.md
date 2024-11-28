@@ -46,13 +46,31 @@ Roles:
     - Testing phase (Run on server),Tested by QE(Quality Assurance engineer)
   - Deployment :Promote this to production server
 
-## Virtual Machine (VM)
+## Virtual Machine (VM)(1)
 
 - What is Server?
 - Physical vs Virtual
-- Hypervisor-creates virtual machine
+- Hypervisor
+  - Hypervisor is already installed in physical server,and it creates virtual machine.
 - How to create vm?
 
 ### RealWorld example
 
-- If You request for a vm in AWS of Mumbai branch ,One of the Physical Server's Hypervisor will create a vm for you and will also share you information related to the vm.
+- If You request for a vm in AWS of Mumbai branch ,One of the Physical Server's Hypervisor will create a vm for you and will also share you information(Ip address,requested specification like memory,cpu) related to the vm.
+
+## Virtual Machine (VM)(2)
+
+AWS allows for automation.To do this devops engineer writes **script** to make a request to AWS API(EC2,S2) In return it sends ec2 instance.
+the request must be valid,authenticated ,authorized.
+
+### Types of **Script**
+
+Means of communicating with aws api
+
+- AWS CLI
+- AWS API
+- AWS CFT(Cloud formation template)
+- AWS CDK(Cloud development Kit)
+  - very specific towards aws
+- Terraform
+- Manual approach (Inefficient ,Time consuming)
