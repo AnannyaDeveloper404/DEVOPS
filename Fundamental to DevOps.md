@@ -74,3 +74,10 @@ Means of communicating with aws api
   - very specific towards aws
 - Terraform
 - Manual approach (Inefficient ,Time consuming)
+
+### AWS EC2 instance creating
+
+- Log in AWS console
+- Service=>EC2
+- Go to Instance
+- Launch Instances
