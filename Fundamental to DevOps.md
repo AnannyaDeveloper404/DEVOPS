@@ -81,3 +81,19 @@ Means of communicating with aws api
 - Service=>EC2
 - Go to Instance
 - Launch Instances
+  ## Same goes for Azure (Manual way to launch instance)
+- access EC2 instance in MobaXTerm .
+
+### Logging in the virtual machine manually
+
+- Click on the instance id
+- Connect
+- You've logged in the vm
+
+#### This process is not recommended
+
+### Recommended
+
+- putty
+- iterm(Mac)
+- mobaxterm
