@@ -129,9 +129,43 @@ Means of communicating with aws api
 - touch <file name>
 - cat <file name>
 - vi <file name>
+- vim <file name>
 - ls -ltr
 - ls -a
 - free -g
 - nproc
 - df -h
 - top
+- man <command>
+
+##### shebang
+
+```bash
+#!/bin/ksh
+```
+
+###### different executable :bin,sh,ksh,dash
+
+#### sh vs bash
+
+- previously both of them were same since sh are forwarded to bash by the linking
+- sh are used as dash in ubuntu(It might not work as bash in case of ubuntu)
+
+```bash
+#!/bin/ksh
+echo "My name is Anannya."
+```
+
+to save:
+
+```
+esc :wq! -> Enter
+```
+
+- execute the bash file command
+  ```
+  ./<fileName>
+  or
+  sh  <fileName>
+  ```
+  if it shows 'permission denied',
