@@ -97,3 +97,41 @@ Means of communicating with aws api
 - putty
 - iterm(Mac)
 - mobaxterm
+
+## Why use linux Operating System:
+
+- Fast
+- Open source
+- Secure
+
+### Architecture
+
+#### kernel
+
+- Heart of the Operating System
+  - Manages system resources like CPU, memory, and I/O devices.
+  - process management
+  - handling system calls
+  - Acts as a bridge between applications and hardware.
+
+### System Libraries
+
+- Abstract raw kernel interactions.
+- Provide a simpler, consistent interface for application developers.
+- Avoid the need for developers to write complex and error-prone system calls directly..
+
+### Shell command
+
+- cd
+- ls
+- mkdir
+- pwd
+- touch <file name>
+- cat <file name>
+- vi <file name>
+- ls -ltr
+- ls -a
+- free -g
+- nproc
+- df -h
+- top
