@@ -134,7 +134,7 @@ Means of communicating with aws api
 - ls -a
 - free -g
 - nproc
-- df -h
+- df -h //available storage or disc space
 - top
 - man <command>
 
@@ -190,3 +190,35 @@ shell script notes
 #### In automation ,how do you evaluate the node health?
 
 we can use shell-scripting where we can employ command like - free -g, nproc ,top(everything about the system )
+
+```shell
+#!/bin/bash
+#################################
+# Author: Anannya
+# Date:01/12/2024
+#
+# This scripts outputs the node health
+# version :v1
+# ################################
+set -x #debug mode
+
+df -h
+
+free -g
+
+nproc
+```
+
+`set -x` is like a echo ,it displays the respective command to make things understandable
+
+```shell
+ps -ef
+```
+
+shows all the process working behind the scene
+
+```shell
+ps -ef | grep "amazon"
+```
+
+shows all the process oriented with word amazon
