@@ -168,4 +168,25 @@ esc :wq! -> Enter
   or
   sh  <fileName>
   ```
-  if it shows 'permission denied',
+  if it shows 'permission denied',grant permission by chmod --
+  |-root
+  |-group
+  |- your
+  execute-4|read-1|write-2
+
+```shell
+chmod 444 <filename>
+```
+
+```
+history
+this command will display all the command used as far
+```
+
+shell script notes
+
+- commenting syntax starts with #
+
+#### In automation ,how do you evaluate the node health?
+
+we can use shell-scripting where we can employ command like - free -g, nproc ,top(everything about the system )
