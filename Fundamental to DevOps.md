@@ -209,16 +209,16 @@ free -g
 nproc
 ```
 
-`set -x` is like a echo ,it displays the respective command to make things understandable
+`set -x`
+
+<!-- is like a echo ,it displays the respective command to make things understandable -->
 
 ```shell
 ps -ef
+# shows all the process working behind the scene
 ```
-
-shows all the process working behind the scene
 
 ```shell
 ps -ef | grep "amazon"
+# shows all the process oriented with word amazon
 ```
-
-shows all the process oriented with word amazon
