@@ -222,3 +222,82 @@ ps -ef
 ps -ef | grep "amazon"
 # shows all the process oriented with word amazon
 ```
+
+```shell
+set -e
+# exit the script when there is an error
+set -o
+# catch pipe-fail
+```
+
+#### drawback of `set -e`
+
+If there is error and pipe on the same line ,then is the last command of the pipe arguments is errorless,`set -e` will not be able to stop right there.then `set -o` comes in the picture ro catch the error.
+
+```shell
+ curl -X GET https://en.wikipedia.org/wiki/Document
+
+#It fetches any link to get information
+wget <url>
+#it will download the url document
+```
+
+```shell
+sudo su -
+# switches to root user
+#su means switch user
+sudo find / -name pam
+#It finds all the file which has pam in its name .sudo is to provide privilege access
+```
+
+```shell
+# if[expr]
+# then
+# [do something]
+# else
+# [do something]
+# fi
+a=4
+b=10
+if [ $a > $b ]
+then
+  echo "a"
+else
+  echo "b"
+fi
+
+
+for i in {1,199};do echo $1;done
+```
+
+```shell
+trap "echo don't use the ctrl+c" SIGINT
+#It restricts the ctrl+c signal
+```
+
+### Interview QS
+
+- What is the output of the command ?explain the reason
+
+```shell
+data | echo "today is"
+```
+
+- list some of the command used commonly
+
+```shell
+find
+top
+df
+cd
+ls
+```
+
+- Command to print all the process
+  ```shell
+  ps -ef | awk -F" " '{print $2}'
+  ```
+- print the error from a remote log file
+  ```shell
+  curl <url> |grep error
+  ```
